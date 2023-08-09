@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GENERATOR OF SECURE EASY-TO-REMEBER PASSWORDS</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 2px solid white;
+            border-radius: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 20px;
+            border: 1px solid white;
+            border-radius: 5px;
+            background-color: black;
+            color: white;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        button[type="submit"] {
+            background-color: #82117b;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #82117b;
+        }
+    </style>
+</head>
+<body>
+    <h1>GENERATE EASY-TO-REMEBER PASSWORDS</h1>
+    <form method="post">
+        <label for="word">Enter base word:</label>
+        <input type="text" name="word" required>
+
+        <label for="num_digits">Enter the number of digits attached to the password:</label>
+        <input type="number" name="num_digits" required>
+
+        <input type="checkbox" id="add_special" name="add_special">
+        <label for="add_special">Add a special character to the end of the password?</label>
+
+        <button type="submit">Generate password!</button>
+    </form>
+</body>
+</html>
